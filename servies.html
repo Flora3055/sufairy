@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zxx">
+   <head>
+      <title>Services</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/png" href="images/favicon_logo.png">
+      <!-- style file -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- media file -->
+      <link rel="stylesheet" type="text/css" href="css/media.css">
+      <!--animation -->
+      <link href="https://cdn.bootcdn.net/ajax/libs/aos/2.3.1/aos.css" rel="stylesheet">
+      <script src="https://cdn.bootcdn.net/ajax/libs/aos/2.3.1/aos.js"></script>
+   
+      <!-- fontawesome -->
+      <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <!-- jquery link-->
+      <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://cdn.bootcdn.net/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+      <!-- js file --> 
+      <script src="js/categories_two.js"></script>
+      <script src="js/navbar.js"></script>
+      <script src="js/animation.js"></script>
+   </head>
+   <body>
+      <div class="inner_main_page">
+         <!-- header start -->
+         <div class="main_page">
+            <!-- upper start -->
+            <div class="upper_hdr">
+               <div class="inner_container">
+                  <div class="upper_header_sec">
+                     <div class="countdown_outer">
+                        <div class="limited_text">
+                           <p>Limited Time Offer!</p>
+                        </div>
+                        <div id="countdown">
+                           <div id="days">00</div>
+                           <span>Day &nbsp;: </span>
+                           <div id="hours"> 00</div>
+                           <span>Hrs &nbsp;:  </span>
+                           <div id="minutes"> 00</div>
+                           <span>Mins &nbsp;: </span>
+                           <div id="seconds"> 00</div>
+                           <span> Sec</span>
+                        </div>
+                     </div>
+                     <div class="free_shipping">
+                        <div class="sale_freee">
+                           <span> Sale 30% off </span> : &nbsp;  Free Shipping Over $199
+                        </div>
+                        <div class="hdr_shop">
+                           <a href="collection.html">SHOP NOW!</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- upper end -->
+            <!-- logo section  start -->
+            <div class="logo_search_sec">
+               <div class="inner_container">
+                  <div class="logo_outer_sec">
+                     <!-- logo section -->
+                     <div class="logo_inner">
+                        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                     </div>
+                     <!-- search section -->
+					 <div class="search_bar">
+						<input type="search" id="search" placeholder="Search" oninput="performSearch()">
+						<span><img class="search_bar_img" src="images/Search.png" alt="Search"></span>
+						<div id="results"></div>
+					</div>
+                     <!-- Account wishlist section -->
+                     <div class="ac_wish_sec">
+                        <div class="account_sec">
+                           <a href="register.html"> <img src="images/User.png" alt="User">
+                           <span>Account</span></a>
+                        </div>
+                        <!-- wishlist -->
+                        <div class="wishlist_sec">
+                           <a href="cart.html">Wishlist (0)</a>
+                        </div>
+                        <!-- Shopping bag -->
+                        <div class="shopping_sec">
+                           <a href="cart.html"> <img src="images/Shopping_bag.png" alt="Shopping_bag">
+                           <span>My Cart (0)</span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- logo section  end -->
+            <!-- menu bar section -->
+            <header>
+               <div class="main_menu_outer">
+                  <div class="inner_container">
+                     <div class="menu_sec_outer">
+                        <div class="menu_sec_left">
+                           <!-- Category section Start -->
+                           <div class="categories_hd_section">
+                              <div class="categories_hd">
+                                 <img src="images/Group4713.png" alt="Group4713">
+                                 <p>SHOP BY CATEGORIES</p>
+                              </div>
+                              <div class="categories_hd_inner" style="opacity: 0; visibility: hidden; height:0;">
+                                 <div class="navbar">
+                                    <div class="menu-btn">
+                                       <div class="menu-btn__lines"></div>
+                                    </div>
+                                    <ul class="menu-items">
+                                       <li>
+                                          <a href="collection.html" class="menu-item first-item">Family Fun</a>
+                                       </li>
+                                       <li class="dropdown">
+                                          <a href="collection.html" class="menu-item first-item">Top Toys</a>
+                                       </li>
+                                       <li class="dropdown">
+                                          <a href="collection.html" class="menu-item first-item">Kids Activities</a>
+                                       </li>
+                                       <li><a href="collection.html" class="menu-item first-item">Creative Toys</a></li>
+                                       <li>
+                                          <a href="collection.html" class="menu-item first-item">Role Play Toys</a>
+                                       </li>
+                                       <li>
+                                          <a href="collection.html" class="menu-item first-item">Montessori Toys</a>
+                                       </li>
+                                       <li><a href="collection.html" class="menu-item first-item">Musical Instruments</a></li>
+                                       <li><a href="collection.html" class="menu-item first-item">Learning</a></li>
+                                       <li><a href="collection.html" class="menu-item first-item">Puzzle Toys</a></li>
+                                       <li><a href="collection.html" class="menu-item first-item">Cartoon dolls</a></li>
+                                       <li><a href="collection.html" class="menu-item first-item">Other Toys</a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- Category section end -->
+                        <div class="menu_sec_right">
+                           <nav>
+                              <div class="container_header">
+                                 <div class="header_row">
+                                    <div class="mobile_btn">
+                                       <i class="fas fa-bars"></i>
+                                    </div>
+                                    <div class="main_menu">
+                                       <ul>
+                                          <li><a href="index.html">HOME</a></li>
+                                          <li class="bd_text"><a href="about_us.html">ABOUT US</a></li>
+                                          <li class="has_dropdown bd_text">
+                                             <a href="about_us.html">PRODUCT </a><i class="fas fa-angle-down"></i>
+                                             <ul class="sub_menu">
+                                                <li><a href="servies.html">Toy soldier</a></li>
+                                                <li class="has_dropdown">
+                                                   <a href="servies.html">Animals Toy </a><i class="fas fa-angle-right"></i>
+                                                   <ul class="sub_menu">
+                                                      <li><a href="servies.html">Ithaca Kitty</a></li>
+                                                      <li><a href="servies.html">Littlest Pet Shop</a></li>
+                                                      <li class="has_dropdown">
+                                                         <a href="servies.html">Stick Horse </a><i class="fas fa-angle-right"></i>
+                                                         <ul class="sub_menu">
+                                                            <li><a href="servies.html"> Horse Ride</a></li>
+                                                            <li><a href="servies.html">Handmade Horse</a></li>
+                                                            <li><a href="servies.html">Soft Horse</a></li>
+                                                            <li><a href="servies.html">Electric Horse </a></li>
+                                                         </ul>
+                                                      </li>
+                                                      <li><a href="servies.html">ZhuZhu Pets</a></li>
+                                                   </ul>
+                                                </li>
+                                                <li><a href="servies.html">Creative toys</a></li>
+                                                <li><a href="servies.html">Electronic toys</a></li>
+                                             </ul>
+                                          </li>
+                                          <li class="mega_menu_dropdown mega_menu_demo_2 has_dropdown bd_text">
+                                             <a href="collection.html">SHOP </a> <i class="fas fa-angle-down"></i>
+                                             <div class="mega_menu sub_menu">
+                                                <div class="mega_menu_item">
+                                                   <a href="collection.html"> <img src="images/394e046b6ce7ac1e2123a232ed005970.png" alt="394e046b6ce7ac1e2123a232ed005970"></a>
+                                                </div>
+                                                <div class="mega_menu_item">
+                                                   <h3>Puzzles | Kids</h3>
+                                                   <a href="collection.html">Rhythm Instruments</a>
+                                                   <a href="collection.html"> Ring Catcher Octopus</a>
+                                                   <a href="collection.html">Rocking Horse Ride</a>
+                                                   <a href="collection.html">Electric Ride</a>
+                                                   <a href="collection.html">Toddlers</a>
+                                                </div>
+                                                <div class="mega_menu_item">
+                                                   <h3>Art & Craft</h3>
+                                                   <a href="collection.html">Smart Stages</a>
+                                                   <a href="collection.html">crawling toddler</a>
+                                                   <a href="collection.html">Charlie Bear</a>
+                                                   <a href="collection.html">Handmade Charlotte</a>
+                                                   <a href="collection.html">Airplane</a>
+                                                </div>
+                                                <div class="mega_menu_item">
+                                                   <h3>Games</h3>
+                                                   <a href="collection.html">Soft Alligator</a>
+                                                   <a href="collection.html">Around Toy</a>
+                                                   <a href="collection.html">Stocking Stuffers</a>
+                                                   <a href="collection.html">music crawling toddler</a>
+                                                   <a href="collection.html">Rider Dazzle Rocking</a>
+                                                </div>
+                                             </div>
+                                          </li>
+                                          <li class="mega_menu_dropdown mega_menu_demo_2 has_dropdown bd_text">
+                                             <a href="blog.html">BLOG </a><i class="fas fa-angle-down"></i>
+                                             <div class="mega_menu sub_menu">
+                                                <div class="mega_menu_item">
+                                                   <a href="blog.html">
+                                                      <img src="images/blog1.png" alt="blog1">
+                                                      <h3>Voluptate velit </h3>
+                                                   </a>
+                                                </div>
+                                                <div class="mega_menu_item">
+                                                   <a href="blog.html">
+                                                      <img src="images/blog2.png" alt="blog2">
+                                                      <h3>Incididunt ut labore </h3>
+                                                   </a>
+                                                </div>
+                                                <div class="mega_menu_item">
+                                                   <a href="blog.html">
+                                                      <img src="images/blog3.png" alt="blog3">
+                                                      <h3>Consectetur</h3>
+                                                   </a>
+                                                </div>
+                                                <div class="mega_menu_item">
+                                                   <a href="blog.html">
+                                                      <img src="images/blog4.png" alt="blog4">
+                                                      <h3>Ullamco laboris </h3>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                          </li>
+                                          <li class="bd_text"><a href="contact_us.html">CONTACT US</a></li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </nav>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </header>
+            <!-- header end -->
+            <div class="services_main_page">
+               <!-- Banner section Start -->
+               <div class="banner_main_head" data-aos="zoom-in" data-aos-delay="60" data-aos-offset="100" data-aos-duration="1000">
+                  <h1>Services</h1>
+                  <p><a href="index.html">Home </a>&gt;<a href="services.html"> Services</a></p>
+               </div>
+               <!-- Banner section end -->
+			   
+			   
+               <!-- Our Services section start -->
+               <div class="services_one_section">
+                  <div class="inner_container">
+                     <div class="services_one_sec_row">
+                        <div class="services_one_sec_left" data-aos="fade-right" data-aos-delay="60" data-aos-offset="100" data-aos-duration="1000">
+                           <h2>Our Services</h2>
+                           <p>Excepteur sint occaecat cupidatat dolore non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="services_one_sec_right" data-aos="fade-left" data-aos-delay="60" data-aos-offset="100" data-aos-duration="1000">
+                           <div class="Secured_row">
+                              <div class="Secured_box_left">
+                                 <div class="icon_section"> <img class="img1" src="images/Maskgroup34567.png" alt="Maskgroup34567">
+                                 </div>
+                              </div>
+                              <div class="Secured_box_right">
+                                 <h4>Secured Payments</h4>
+                                 <p>Tempor incididunt es ut labore ut dolore magna aliquea ut enim ad minim veniam, quis nostrud exercitation.</p>
+                              </div>
+                           </div>
+                           <!-- section -->
+                           <div class="Secured_row">
+                              <div class="Secured_box_left">
+                                 <div class="icon_section"><img class="img2" src="images/Mask34455.png" alt="Mask34455">
+                                 </div>
+                              </div>
+                              <div class="Secured_box_right">
+                                 <h4>Easy Return Policy</h4>
+                                 <p>Lorem ipsum dolor sit amet, consectetur labo re adipiscing elit, sed do eiusmod.</p>
+                              </div>
+                           </div>
+                           <!-- section -->
+                           <div class="Secured_row">
+                              <div class="Secured_box_left">
+                                 <div class="icon_section"> <img class="img3" src="images/Maskgroup2345.png" alt="Maskgroup2345">
+                                 </div>
+                              </div>
+                              <div class="Secured_box_right">
+                                 <h4>Free Shipping</h4>
+                                 <p>Lorem ipsum dolor sit amet, consectetur labo re adipiscing elit, sed do eiusmod.</p>
+                              </div>
+                           </div>
+                           <!-- section -->
+                           <div class="Secured_row">
+                              <div class="Secured_box_left">
+                                 <div class="icon_section last-child"> <img class="img4" src="images/Maskgroup12345.png" alt="Maskgroup12345">
+                                 </div>
+                              </div>
+                              <div class="Secured_box_right">
+                                 <h4>Online Support</h4>
+                                 <p>Lorem ipsum dolor sit amet, consectetur labo re adipiscing elit, sed do eiusmod.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Our Services section start -->
+               <!-- Check our featured photoshoots Start -->
+               <div class="services_two_section">
+                  <div class="inner_container">
+                     <div class="services_two_row">
+                        <div class="services_two_left" data-aos="zoom-in" data-aos-delay="60" data-aos-offset="100" data-aos-duration="1000">
+                           <h1>Check our featured photoshoots</h1>
+                        </div>
+                        <div class="services_two_right" data-aos="zoom-in" data-aos-delay="60" data-aos-offset="100" data-aos-duration="1000">
+                           <p>Nostrud exercitation ullamco laboris nisi  aliq pariatur commodo aute irure dolor in amit. </p>
+                           <ul>
+                              <li>Voluptate velit esse</li>
+                              <li>Non proident</li>
+                              <li>Exercitation ullamco laboris</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="services_two_inner">
+                  <div class="inner_container">
+                     <div class="services_two_inner_row">
+                        <div class="services_two_inner_box" data-aos="zoom-in" data-aos-delay="60" data-aos-offset="100" data-aos-duration="1000">
+                           <img src="images/service_box1.png" alt="service_box1">
+                           <h3>Nostrud exercitation</h3>
+                           <p>Ut enim ad minim veniam, quis nostrud sit ut amit 
+                              exercitation ullamco laboris nisi  aliquip ea nisi 
+                              pariatur commodo aute irure dolor.
+                           </p>
+                        </div>
+						
+                        <!-- section -->
+                        <div class="services_two_inner_box" data-aos="zoom-in" data-aos-delay="60" data-aos-offset="100" data-aos-duration="1000">
+                           <img src="images/service_box2.png" alt="service_box2">
+                           <h3>Nostrud exercitation</h3>
+                           <p>Ut enim ad minim veniam, quis nostrud sit ut amit 
+                              exercitation ullamco laboris nisi  aliquip ea nisi 
+                              pariatur commodo aute irure dolor.
+                           </p>
+                        </div>
+                        <!-- section -->
+                        <div class="services_two_inner_box" data-aos="zoom-in" data-aos-delay="60" data-aos-offset="100" data-aos-duration="1000">
+                           <img src="images/service_box3.png" alt="service_box3">
+                           <h3>Nostrud exercitation</h3>
+                           <p>Ut enim ad minim veniam, quis nostrud sit ut amit 
+                              exercitation ullamco laboris nisi  aliquip ea nisi 
+                              pariatur commodo aute irure dolor.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Check our featured photoshoots end -->
+			   
+			   
+			   
+               <!-- last img and text section Start -->
+               <div class="service_last_section">
+                  <div class="inner_container">
+                     <div class="service_last_row">
+                        <div class="service_last_left" data-aos="fade-right" data-aos-delay="60" data-aos-offset="100" data-aos-duration="1000">
+                           <h1>Aliquip pariatur commodo aute irure dolor.</h1>
+                           <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat sit nullae pariatur. Excepteur sint amit occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco sit laboris nisi  aliquip ea pariatur commodo aute irure dolor in amit reprehenderit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla nisi pariatur.</p>
+                        </div>
+                        <div class="service_last_right" data-aos="fade-left" data-aos-delay="60" data-aos-offset="100" data-aos-duration="1000">
+                           <img src="images/Group784964.png" alt="Group784964">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- last img and text section end -->
+			   
+			   
+			   
+            </div>
+         </div>
+      </div>
+      <!-- loader start -->
+      <div id="preloader">
+         <div id="status"></div>
+      </div>
+      <!-- loader end -->
+      <!-- page_up_section Start -->
+      <div class="page_up_section">
+         <a id="page_up_button"><img src="images/page_up_two.png" alt="page_up"></a>
+      </div>
+      <!-- page_up_section end -->
+      <!-- footer Start -->
+      <footer data-aos="fade-up" data-aos-delay="60" data-aos-offset="100" data-aos-duration="1000">
+         <div class="inner_container">
+            <div class="footer_newsletter">
+               <h1>OUR NEWSLETTER</h1>
+               <div class="email_inner_ftr">
+                  <input type="text" name="text" placeholder="Enter Your Email Address">
+                  <a class="submit" href="register.html">Subscribe Now</a>
+               </div>
+            </div>
+            <div class="menu_footer">
+               <div class="menu_footer_box">
+                  <h3>About us</h3>
+                  <p class="text_ftr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                  <p>Excepteur sint occaecat non proident, sunt in culpaqui.</p>
+               </div>
+               <div class="menu_footer_box">
+                  <h3>Informations</h3>
+                  <ul>
+                     <li><a href="about_us.html">About us</a></li>
+                     <li><a href="contact_us.html">Contact  us</a></li>
+                     <li><a href="privacy_policy.html">Privacy Policy</a></li>
+                     <li><a href="terms.html">Terms & Conditions</a></li>
+                     <li><a href="privacy_policy.html">Shipping & Returns</a></li>
+                  </ul>
+               </div>
+               <div class="menu_footer_box">
+                  <h3>Services</h3>
+                  <ul>
+                     <li><a href="privacy_policy.html">Online Support</a></li>
+                     <li><a href="terms.html">Our Client</a></li>
+                     <li><a href="terms.html">Help Center</a></li>
+                     <li><a href="faq.html">FAQ</a></li>
+                     <li><a href="servies.html">Services</a></li>
+                  </ul>
+               </div>
+               <div class="menu_footer_box">
+                  <h3>Shop</h3>
+                  <ul>
+                     <li><a href="collection.html">Shop  All</a></li>
+                     <li><a href="collection.html">Sale</a></li>
+                     <li><a href="collection.html">New Arrivals</a></li>
+                     <li><a href="collection.html">Best Collection</a></li>
+                     <li><a href="collection.html">Latest Products</a></li>
+                  </ul>
+               </div>
+            </div>
+            <!-- footer logo -->
+            <div class="footer_logo_section">
+               <div class="logo-ftr">
+                  <a href="index.html"><img src="images/logo_footer.png" alt="logo_footer"></a>
+               </div>
+               <div class="contact_footer">
+                  <div class="loction_ftr"><img src="images/location.png" alt="location"> <strong>Address  :  </strong> 4517 Washington Ave. Mancheste</div>
+                  <div class="loction_ftr"><a href="tel:+(603)555-0123"><img src="images/call.png" alt="call"> <strong>Phone :  </strong>(603)555-0123</a></div>
+                  <div class="loction_ftr"><a href="mailto:contact@website.com"><img src="images/mail.png" alt="mail"> <strong>Email :  </strong>contact@website.com</a></div>
+               </div>
+            </div>
+            <div class="copy_right">
+               <img src="images/e1f08393-359b-440d-8eba-75ac5c83168b-cover.png" alt="payment">
+               <p>© 2026 All Rights Reserved. <a target="_blank" href="https://www.mobanwang.com/" title="网站模板" style="color:#fff">网站模板</a></p>
+            </div>
+         </div>
+      </footer>
+      <!-- footer end -->
+   </body>
+</html>
