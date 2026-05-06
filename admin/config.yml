@@ -1,0 +1,25 @@
+backend:
+  name: github
+  repo: Flora3055/sufairy  
+  branch: main
+  base_url: https://api.github.com
+
+media_folder: "images/uploads"  
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "页面内容"
+    files:
+      - name: "index"
+        label: "首页"
+        file: "index.html"
+        fields:
+          - {label: "页面标题", name: "title", widget: "string"}
+          - {label: "页面描述", name: "description", widget: "text"}
+          - {label: "产品列表", name: "products", widget: "list", fields: [
+              {label: "产品名称", name: "name", widget: "string"},
+              {label: "产品价格", name: "price", widget: "string"},
+              {label: "产品图片", name: "image", widget: "image"},
+              {label: "产品描述", name: "desc", widget: "text"}
+            ]}
